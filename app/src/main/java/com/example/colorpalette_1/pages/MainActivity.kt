@@ -8,11 +8,14 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.colorpalette_1.adapters.ColorAdapter
+import com.example.colorpalette_1.viewmodels.ColorDetailViewModel
+import com.example.colorpalette_1.viewmodels.ColorViewModel
 
 
 class MainActivity : AppCompatActivity(){
     val recyclerColor=ColorAdapter(arrayListOf())
-    private lateinit var  viewModel:ColorViewModel
+    private lateinit var  viewModel: ColorViewModel
+    private lateinit var  viewModelDetail: ColorDetailViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
